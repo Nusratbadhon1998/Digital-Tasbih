@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    columns: white;
+}
+
+#main {
+    background-image: url("https://t3.ftcdn.net/jpg/03/01/93/98/360_F_301939801_ENSHErMa33QF9Z0bJOJ8ZlNsVOJ3dy5h.jpg");
+
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(42, 31, 31, 0.795);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+#container .title {
+    color: white;
+    font-size: 120px;
+
+    text-align: center;
+
+    /* background: red; */
+}
+
+#boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    margin-top: 30px;
+}
+
+.box {
+    height: 350px;
+    width: 400px;
+    padding: 80px 10px;
+    margin: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    backdrop-filter: blur(1rem);
+    background: linear-gradient(to right bottom,
+            rgba(222, 232, 184, 0.4),
+            rgba(151, 243, 150, 0.2));
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+
+}
+
+.box>div {
+
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box>p {
+    margin: 30px 0px;
+}
+
+button {
+    /* background-color: black; */
+    width: 120px;
+    height: 50px;
+    border-radius: 20px;
+    font-weight: 400;
+    display: inline;
+}
+
+.plus-btn {
+    background-color: #ffe4c4;
+}
+
+.minus-btn {
+    background-color: #ffe4c4;
+}
+
+#reset-btn {
+
+    background-color: bisque;
+}
+
+.reset-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:532px) {
+
+    #main {
+        height: 100%;
+        width: 100%;
+    }
+
+    #container .title {
+        font-size: 2rem;
+
+        padding-top: 30px;
+    }
+
+    #boxes {
+        flex-direction: column;
+    }
+    .box {
+        height: 230px;
+        width: 250px;
+        padding: 80px 10px;}
+
+        button {
+            /* background-color: black; */
+            width: 90px;
+            height: 50px;}
+
+}
+
+
+@media screen and (min-width:533px) and (max-width:888px) {
+
+    #main {
+        height: 100%;
+        width: 100%;
+    }
+
+    #container .title {
+        font-size: 2rem;
+
+        padding-top: 30px;
+    }
+
+    #boxes {
+        flex-direction: column;
+    }
+    .box {
+        height: 230px;
+        width: 250px;
+        padding: 80px 10px;}
+
+        button {
+            /* background-color: black; */
+            width: 90px;
+            height: 50px;}
+
+}
